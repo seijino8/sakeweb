@@ -1,0 +1,61 @@
+﻿/* ======== 全体（背景・フォント） ======== */
+body {
+  font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+  background:#faf8f3;
+  margin:0;
+  padding:0;
+  line-height:1.8;
+}
+
+/* ======== ヘッダー ======== */
+header {
+  background:#222;
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+h1 { margin:0; font-size:28px; }
+nav a {
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+  font-size:16px;
+}
+
+/* ======== メインコンテナ ======== */
+.container {
+  max-width:900px;
+  margin:40px auto;
+  padding:0 20px;
+}
+
+/* ======== 記事カード ======== */
+.post {
+  background:white;
+  padding:20px;
+  margin-bottom:30px;
+  border-radius:8px;
+  box-shadow:0 0 8px rgba(0,0,0,0.1);
+}
+.post img {
+  width:100%;
+  border-radius:8px;
+  margin-bottom:15px;
+}
+.post h2{
+  margin-top:0;
+  font-size:22px;
+}
+.date{
+  color:#666;
+  font-size:14px;
+  margin-bottom:10px;
+}
+
+/* ======== フッター ======== */
+footer{
+  text-align:center;
+  color:#666;
+  font-size:14px;
+  padding:30px 0;
+}
