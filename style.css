@@ -59,3 +59,44 @@ footer{
   font-size:14px;
   padding:30px 0;
 }
+/* ==============================
+   📱 レスポンシブ（画面幅でレイアウト変更）
+==============================*/
+
+/* ▼ PC(900px以上)では2列並び */
+@media(min-width:900px){
+  .container {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+  }
+  .post {
+    margin-bottom:0; /* card間の余白はgapに集約 */
+  }
+}
+
+/* ▼ スマホ(899px以下)は1列 */
+@media(max-width:899px){
+  .container {
+    display:block;
+  }
+}
+
+/* 画像を正方形トリミングに統一 */
+.post img{
+  width:100%;
+  aspect-ratio:1 / 1;      /* 正方形比率 */
+  object-fit:cover;         /* 中央をトリミングして美しく表示 */
+  border-radius:10px;
+  margin-bottom:15px;
+}
+
+/* hoverでカードが浮くアニメーション */
+.post{
+  transition:transform .35s, box-shadow .35s;
+}
+.post:hover{
+  transform: translateY(-7px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.18);
+}
+
